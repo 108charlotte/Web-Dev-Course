@@ -1,0 +1,58 @@
+/* navbar styling */
+/* it can be a good idea to start with a tutorial and then change your code so that it
+looks how you want it to rather than starting from scratch and trying to figure out 
+annoying details with spacing or other issues you may run into. Here is the starter 
+code that I used for this navbar: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+
+* {
+    /* you'll often see several fonts listed; this is because the first one is the first 
+    choice, but the following ones are fallbacks in case the browser can't display that font */
+    font-family: Arial, Helvetica, sans-serif;
+    /* this line is so that the navbar doesn't look like it's floating even though it has no 
+    margin! if you want to understand more about how the margin and padding properties work, 
+    I would recommend checking out the "computed" tab (next to styles, where you can see the 
+    CSS code, not the HTML tab) where you can see a helpful diagram for the different regions 
+    of margin/padding, etc. */
+    margin: 0px; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+ul li {
+  float: left;
+  margin: 10px; 
+}
+
+ul li a {
+  display: block;
+  color: rgb(61, 61, 61);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* come back later for a description of what this is doing! */
+#current {
+  background-color: #c6c6c6; 
+}
+
+ul li a:hover {
+  background-color: #c6c6c6;
+}
+
+/* let's reapply normal spacing for the main tag so that it isn't smushed against the wall or navbar */
+main {
+    padding: 20px;
+}
+
+/* but now the content of main is smushed together! let's add some spacing to the tags below it */
+p, ol, h2 {
+    margin: 15px 0px; 
+    line-height: 1.75rem; 
+}
