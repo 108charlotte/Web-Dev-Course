@@ -1,0 +1,28 @@
+<!--this line tells your browser that this is an html file, and to interpret what is written here as html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Web Dev through Inspect</title>
+    </head>
+    <body>
+        <!--check out the organization tab for more about navs, headers, footers, sections, and other organization tags-->
+        <!--navbar, copied and pasted from index.html. sadly, vanilla html does not support templating (writing code once and then 
+        referencing that template in your webpages), so you will likely have to just copy and paste your navbar into your new pages. 
+        this is what I did, and it is why all of the comments are the same as my index.html page-->
+        <nav>
+            <!--navbars are often made using unordered lists, which are then styled with CSS-->
+            <ul>
+                <!--inside the unordered list, there are typically list elements which are linked through the <a> tag to other webpages-->
+                <!--the href attribute of the a tag is for the destination of the link, not src like in images!-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="organization.html" id="current">Organization</a></li>
+                <li><a href="styling.html">Styling</a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>Come back soon for more content on organization in html using headers, footers, main, nav, section, div, etc.</p>
+        </main>
+    </body>
+</html>

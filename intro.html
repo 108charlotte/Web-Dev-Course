@@ -1,0 +1,124 @@
+<!--this line tells your browser that this is an html file, and to interpret what is written here as html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Web Dev through Inspect</title>
+    </head>
+    <body>
+        <!--check out the organization tab for more about navs, headers, footers, sections, and other organization tags-->
+        <!--navbar, copied and pasted from index.html. sadly, vanilla html does not support templating (writing code once and then 
+        referencing that template in your webpages), so you will likely have to just copy and paste your navbar into your new pages. 
+        this is what I did, and it is why all of the comments are the same as my index.html page-->
+        <nav>
+            <!--navbars are often made using unordered lists, which are then styled with CSS-->
+            <ul>
+                <!--inside the unordered list, there are typically list elements which are linked through the <a> tag to other webpages-->
+                <!--the href attribute of the a tag is for the destination of the link, not src like in images!-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html" id="current">Intro</a></li>
+                <li><a href="organization.html">Organization</a></li>
+                <li><a href="styling.html">Styling</a></li>
+            </ul>
+        </nav>
+        <!--again, we will discuss this in the organization tab! for now though, all you need to know is that the main tag
+        can only exist once in an html file, and represents the reason why someone would visit that webpage-->
+        <main>
+            <h1>Intro to Web Development</h1>
+            <p>
+                <!--notice how I used codes for < and > rather than actually typing them—this is because if I had actually written out the html or
+                paragraph tag, the webpage would have interpreted it as actual html and tried to render it!-->
+                Let's talk about tags. If you inspect this webpage, you will see a bunch of them! But what does &lt;html&gt; or &lt;p&gt; even mean? 
+
+                This session, we will be talking about the &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;title&gt;, &lt;p&gt;, &lt;h1, 2, 3, 4, 5, and 6&gt;, &lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;a&gt;, &lt;img&gt;, and &lt;video&gt; tags! 
+                I know that seems like a lot, but you will never need to memorize all of them; if you forget how to embed a video or image into a webpage, or how to create a list or a link, you can always just quickly google it; 
+                what really matters is having a solid understanding of when and where you might want to use each tag, and understanding the sorts of things you can use HTML for! 
+            </p>
+            
+            <h2>&lt;html&gt;</h2>
+            <p>
+                This tag encompasses the entirety of the HTML code outside of the doctype html declaration. 
+                You have to both open it at the top of the page and close it at the bottom (close by writing 
+                the tag name again, but with a / between the < and the tag name (html in this case))
+            </p>
+
+            <h2>&lt;head&gt;</h2>
+            <p>
+                This tag includes the link to the css file (which we will discuss once we get to styling!), 
+                meta tags (we will discuss this later), and the title tag (see below). 
+            </p>
+
+            <h2>&lt;body&gt;</h2>
+            <p>
+                This tag encompasses the body, which is where all visible content on the webpage goes. 
+                This includes the navbar! 
+            </p>
+
+            <h2>&lt;title&gt;</h2>
+            <p>
+                This tag goes in the head and defines the title of your tab. 
+            </p>
+
+            <h2>&lt;p&gt;</h2>
+            <p>
+                This tag is used for text on your webpage, including all of this text now! If something 
+                isn't a heading but is text, it's probably going to be stored inside of a p tag. 
+            </p>
+
+            <h2>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and &lt;h6&gt;</h2>
+            <p>
+                These are used for headings, like the one on the top of this page. The headings decrease 
+                in size from h1 to h6, with h1 being the largest and h6 being the smallest. h1 can be used 
+                for the main title of your page, while subsequent headings can be sub-headings or divisions 
+                of your page. 
+            </p>
+
+            <h2>&lt;ol&gt;</h2>
+            <p>
+                Used to make an unordered list (•), but requires child list elements. 
+            </p>
+
+            <h2>&lt;ul&gt;</h2>
+            <p>
+                Used to make an ordered list (1., 2., 3.), but requires child list elements. 
+            </p>
+
+            <h2>&lt;li&gt;</h2>
+            <p>
+                Must have a parent ol or ul tag, used for elements of a list. 
+            </p>
+
+            <h3>Example List</h3>
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ol>
+
+            <h2>&lt;a&gt;</h2>
+            <p>
+                This tag is used for links by attaching the href attribute (see example in index.html or below!). 
+                You can also attach the target="_blank" attribute to make the link open in a new webpage (example below). 
+            </p>
+
+            <h2>&lt;img&gt;</h2>
+            <p>
+                Attributes for this tag are src, alt, width, and height. For width and height, see video. For src, that is 
+                the location of the image you are asking the img tag to display. If you are organizing your files, you will 
+                likely have an assets folder, so the path will be assets/img_name (placeholder). Alt is for the alternative 
+                text if the image can't be displayed or the webpage is being read by a screenreader. 
+            </p>
+
+            <h2>&lt;video&gt;</h2>
+            <p>
+                Inspect index.html to learn about this tag! 
+            </p>
+
+            <p>Now it's your turn to try some of these out! Head to over 
+                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic" target="_blank">W3 schools' TryIt editor</a>, 
+                and write a simple webpage with a head, title, body, heading, and paragraph tag. Next, create a list (ordered or unordered); 
+                this can be a todo list, a list of your favorite things, places you want to go, hobbies, etc. 
+            </p>
+        </main>
+    </body>
+</html>

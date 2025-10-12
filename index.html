@@ -1,3 +1,5 @@
+<!--this line tells your browser that this is an html file!-->
+<!DOCTYPE html>
 <html>
     <head>
         <!--Welcome to web dev through inspect! 
@@ -7,6 +9,52 @@
         HTML stands for "Hypertext Markup Language", which may sound scary :(
         Luckily, learning HTML essentially consists of memorizing a few essential tags, 
         and maybe a few extras for fun :)-->
+        <!--this file is the index file, which is a common name for the main html file for a webpage or application-->
+        <!--This line links the css stylesheet for this page. We will talk more about this when we get to styling in styling.html!-->
+        <link rel="stylesheet" href="styles.css">
+        <!--This line changes the title of your tab!-->
         <title>Web Dev through Inspect</title>
     </head>
+    <body>
+        <!--check out the organization tab for more about navs, headers, footers, sections, and other organization tags-->
+        <nav>
+            <!--navbar-->
+            <!--navbars are often made using unordered lists, which are then styled with CSS-->
+            <ul>
+                <!--inside the unordered list, there are typically list elements which are linked through the <a> tag to other webpages-->
+                <!--the href attribute of the a tag is for the destination of the link, not src like in images!-->
+                <li><a href="index.html" id="current">Home</a></li>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="organization.html">Organization</a></li>
+                <li><a href="styling.html">Styling</a></li>
+            </ul>
+        </nav>
+        <!--again, we will discuss this in the organization tab! for now though, all you need to know is that the main tag
+        can only exist once in an html file, and represents the reason why someone would visit that webpage-->
+        <main>
+            <h1>Web Development through Inspect</h1>
+            <p>
+                Welcome to web development through inspect! In this series, we will explore how webpages on the internet work by looking at the code for actual webpages using chrome's 'inspect' tool. 
+                We will be looking at simple webpages on the internet, such as <a href="https://plainvanillaweb.com/index.html">plainvanillaweb.com</a>, along with this website designed for learning 
+                web development using inspect. To get started, you can inspect this webpage (see video below on how to do this with a two-finger click or the menu) or click on intro.html and inspect that. 
+            </p>
+            <!--this is how you insert a video. you can define a width and/or height, and if you set controls to true then the video will display the typical video controls you might see on youtube or
+            another video player platform, such as full-screen, pause and play, change playback speed, etc.-->
+            <!--if you only set one of the width/height, the rest of the video will scale according to that value to keep the ratio between the two the same (your video will not stretch more horizontally
+            or vertically, it will scale with aspect ratio remaining the same)-->
+            <video width="500" controls>
+                <!--you can define the video link inside of the video tag, which allows you to have multiple as fallbacks. 
+                for example, if you have a .mov and a .mp4 version of your video, you may want to include both in case your
+                website in case the browser displaying it doesn't support one of the video types-->
+                <!--in this case, I only have one video, which is a .mov-->
+                <!--you may notice that a lot of things are written here which aren't strictly "necessary", 
+                meaning that the webpage could render just fine without them. the reason all of this is here
+                is so that we can help browsers make decisions, for example rendering the video with the type 
+                that they support without having to try each of them and see which works. -->
+                <source src="assets/How_to_Inspect_a_Webpage.mp4" type="video/mp4">
+                <!--this is a fallback, meaning that if the browser does not support any of the videos, it will display this text instead-->
+                Your browser does not support this video. If you are looking to inspect a webpage, just two-finger click and click inspect, or click view -> developer -> inspect to open the inspect menu. 
+            </video>
+        </main>
+    </body>
 </html>
