@@ -56,3 +56,18 @@ p, ol, h2 {
     margin: 15px 0px; 
     line-height: 1.75rem; 
 }
+
+.big-idea {
+  margin: 5px; 
+  background-color: skyblue; 
+  padding: 10px; 
+  border-radius: 10px; 
+}
+
+.reminder {
+  color: slategray; 
+}
+
+.challenge {
+  color: goldenrod; 
+}
