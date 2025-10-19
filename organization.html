@@ -1,15 +1,18 @@
 <!--this line tells your browser that this is an html file, and to interpret what is written here as html-->
 <!DOCTYPE html>
 <html>
+    <!--this is an example of an organizational HTML tag, check the intro if you want to review its purpose!-->
     <head>
         <link rel="stylesheet" href="styles.css">
         <title>Web Dev through Inspect</title>
     </head>
+    <!--this is an example of an organizational HTMl tag, check the intro if you want to review its purpose!-->
     <body>
         <!--check out the organization tab for more about navs, headers, footers, sections, and other organization tags-->
         <!--navbar, copied and pasted from index.html. sadly, vanilla html does not support templating (writing code once and then 
         referencing that template in your webpages), so you will likely have to just copy and paste your navbar into your new pages. 
         this is what I did, and it is why all of the comments are the same as my index.html page-->
+        <!--this is an example of an organizational HTMl tag, check out the <h2>nav</h2> section for more details-->
         <nav>
             <!--navbars are often made using unordered lists, which are then styled with CSS-->
             <ul>
@@ -21,8 +24,72 @@
                 <li><a href="styling.html">Styling</a></li>
             </ul>
         </nav>
+        <!--this is an example of an organizational HTMl tag! check out the <h2>main</h2> section for more details-->
         <main>
-            <p>Come back soon for more content on organization in html using headers, footers, main, nav, section, div, etc.</p>
+            <h1>Structuring your HTML: Semantic Tags</h1>
+            <p>You may have noticed in our intro or while inspecting these webpages how we used the 
+                head and body tags to seperate invisible and visible content. These are examples of 
+                HTML structure, since the head and body tags themselves serve the purpose of seperating 
+                your code which influences the visual appearence of the webpage from that which does not. 
+                Today, we will cover some other important organizational HTML tags. 
+            </p>
+
+            <p>So what does semantic mean? Semantic HTMl tags are tags which describe the meaning of the elements they encompass. 
+                For example, a nav tag is an example of a semantic tag because it tells you that the content inside of it are links 
+                to other pages of the website. 
+            </p>
+
+            <p class="reminder">Every organizational element has both an opening and closing tag since they all denote 
+                a section for certain code to be written in. 
+            </p>
+
+            <!--we will learn more about the class attribute later, once we get to styling with CSS! for now, you can just ignore it, or google it if you're curious-->
+            <p class="big-idea">Big idea: an organizational HTMl tag is a tag which does not affect the visual appearance 
+                of a page, but creates structure in your code. 
+            </p>
+
+            <p>Here is a quick run-down of some important organizational HTMl tags: </p>
+
+            <h2>&lt;html&gt;</h2>
+            <!--we will talk about classes later, once we get to CSS styling, so you can ignore this for now or google it if you're curious!-->
+            <p class="reminder">(this element closes with &lt;/html&gt;)</p>
+            <p>This is our first example of an organizational HTML tag. The HTML tag itself does not change the visual appearence
+                of the webpage, but allows us to let the browser know that it's looking at an HTML document. 
+            </p>
+
+            <h2>&lt;head&gt;</h2>
+            <p class="reminder">(this element closes with &lt;/head&gt;)</p>
+            <p>Check the intro tab again if you want a reminder on what this element is used for</p>
+
+            <h2>&lt;body&gt;</h2>
+            <p class="reminder">(this element closes with &lt;/body&gt;)</p>
+            <p>Check the intro tab again if you want a reminder on what this element is used for</p>
+
+            <h2>&lt;main&gt;</h2>
+            <p class="reminder">(this element closes with &lt;/main&gt;)</p>
+            <p>This element holds the content which is the most important on a specific page and unique to that page</p>
+
+            <h2>&lt;nav&gt;</h2>
+            <p class="reminder">(this element closes with &lt;/nav&gt;)</p>
+            <p>This element holds the links for the navbar of a webpage. For example, look at the top of this one (you can inspect to check it out!). 
+                Almost all of the time these are heavily styled with CSS, which we will get to soon! 
+            </p>
+
+            <h2>&lt;header&gt;</h2>
+            <p class="reminder">(this element closes with &lt;/header&gt;)</p>
+            <p>nav tags are typically placed in these; they hold introductory content such as headings or logos</p>
+
+            <h2>&lt;footer&gt;</h2>
+            <p class="reminder">(this element closes with &lt;/footer&gt;)</p>
+            <p>Used to define a footer, usually with copyright notices or extra information</p>
+
+            <h2>&lt;section&gt;</h2>
+            <p class="reminder">(this element closes with &lt;/section&gt;)</p>
+            <p>Used to divide content within a document (may be confusing for now, but we will look at an example)S</p>
+
+            <p class="challenge"><b>Challenge #3:</b> All of these tags can be a little confusing out of context, so let's check out an example which makes 
+            use of many of them to create a clear, hierarchical structure; for this challenge, head over to <a href="https://plainvanillaweb.com/index.html">
+                Plain Vanilla Web</a> and try to find 5 examples of organizational HTML tags. You will be asked to share!</p>
         </main>
     </body>
 </html>
