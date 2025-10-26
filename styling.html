@@ -35,7 +35,13 @@
                 to apply styles to specific elements depending on the situation. 
             </p>
             <h2>Using CSS</h2>
-            <p>you can use in-line css with the style attribute</p>
+            <p>you can use in-line css with the style tag, or if it gets complicated, you can create a seperate CSS file. See below for an in-line example (make sure to inspect!) </p>
+            <style>
+                .inline-css-example {
+                    /*note that this doesn't actually apply to anything because nothing has an id of inline-css-example*/
+                    color: green; 
+                }
+            </style>
 
             <h2>Linking a CSS file</h2>
             <p>Sometimes, our CSS gets too complicated to keep in our HTML file. When this happens, 
