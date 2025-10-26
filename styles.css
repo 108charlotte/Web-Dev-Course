@@ -16,7 +16,7 @@ code that I used for this navbar: https://www.w3schools.com/css/css_navbar_horiz
     margin: 0px; 
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -24,12 +24,12 @@ ul {
   background-color: #e0e0e0;
 }
 
-ul li {
+nav ul li {
   float: left;
   margin: 10px; 
 }
 
-ul li a {
+nav ul li a {
   display: block;
   color: rgb(61, 61, 61);
   text-align: center;
@@ -38,11 +38,11 @@ ul li a {
 }
 
 /* come back later for a description of what this is doing! */
-#current {
+nav #current {
   background-color: #c6c6c6; 
 }
 
-ul li a:hover {
+nav ul li a:hover {
   background-color: #c6c6c6;
 }
 
