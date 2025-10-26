@@ -22,7 +22,47 @@
             </ul>
         </nav>
         <main>
-            <p>Come back soon for more content on styling with CSS!</p>
+            <h1>Using CSS to <span class="emphasis">Pretify</span> your Website</h1>
+            <p>Now that we know how to make a basic website using html, let's dive in on how to style it! 
+                A common way to style websites is using CSS (which stands for Cascading Style Sheets), 
+                and you have actually already seen an example of it in the navbar! But if you inspect this page, 
+                you see that the navbar is just made of an unordered list (ul) of links (a)...<span class="emphasis">what's going on here?</span>
+            </p>
+            <p class="reminder">You may have noticed how I have used the &lt;b&gt; tag in order to bold some of my HTML. While we do have access to limited text 
+                styling such as bolding, underlining, and italicizing through HTML tags, CSS gives us much more flexibility with the appearance of our website! 
+            </p>
+            <p class="big-idea">CSS is a way to style your websites. We link it to our HTML using a &lt;link&gt; tag, and we use the class and id attributes
+                to apply styles to specific elements depending on the situation. 
+            </p>
+            <h2>Using CSS</h2>
+            <p>you can use in-line css with the style attribute</p>
+
+            <h2>Linking a CSS file</h2>
+            <p>Sometimes, our CSS gets too complicated to keep in our HTML file. When this happens, 
+                we can create a separate CSS file and link it to our HTMl using a &lt;link&gt; tag. 
+                This tag goes in the &lt;head&gt; of our HTML file. 
+            </p>
+            <p class="challenge"><b>Challenge #1:</b> Inspect this webpage and try to find the link tag. Once you have found it, copy it into the chat. 
+                Then, write beneath it the names of its attributes (remember that these are the other things between the < and > of the tag, other than the tag name, in this case link)
+            </p>
+            <p class="challenge"><b>Challenge #2:</b> Try to find the CSS file in your inspect menu. It won't be where you're used to seeing the HTML, so you may have to look around a bit!</p>
+            <h2>CSS Attributes: id and class</h2>
+            <p>You may have noticed two different selectors in the code on this website. 
+                The <b>id</b> attribute is used for a single element and can only be used on one element, once. 
+                The <b>class</b> attribute can be used on multiple elements, and can be used like a styling template. 
+            </p>
+            <p class="reminder">The id attribute is also often used for Javascript code, which we will go over next class!</p>
+            <p class="challenge"><b>Challenge #3:</b> Try to spot a class attribute on this webpage, and match it to the same name in styles.css. Copy the lines which style these elements and send them in the chat! </p>
+            <p class="challenge"><b>Challenge #4:</b> Now do the same for an id! Try to spot an id attribute on this webpage, and match it to the same name in styles.css. Copy the lines which style this element and send them in the chat! </p>
+            <p>Now, what did you notice about the differences between the two selectors in styles.css? </p>
+            <p>One is called an id selector, which uses a # before the name, and the other is called a class selector, which uses a . 
+                You may also have noticed some <b>element selectors</b> which just have the name of an html tag not preceded by a # or ., which will apply that style to all instances of that tag. 
+                <span class="reminder">* what is interesting about the navbar code? why does it have two elements listed? </span>
+            </p>
+
+            <p class="challenge"><b>Challenge #5 (<u>final challenge for today!</u>):</b> go to <a href="https://www.codechef.com/html-online-compiler">codechef's online compiler</a> and write some HTML code for a simple page with a header and some body text. Include an image if you want to! 
+            Then, style it in styles.css. Try changing the margins, color (which changes font color), font-size, etc., and see what you can come up with (feel free to google cool css properties you can fiddle with)! Then, send a screenshot of your result window and send it in chat. If you are open to sharing yours, please send a message with it which says
+            that you are open to sharing so that we can look at everyones together and learn from each other!</p>
         </main>
     </body>
 </html>
