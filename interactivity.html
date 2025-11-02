@@ -1,0 +1,65 @@
+<!--this line tells your browser that this is an html file, and to interpret what is written here as html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Web Dev through Inspect</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="organization.html">Organization</a></li>
+                <li><a href="styling.html">Styling</a></li>
+                <li><a href="interactivity.html" id="current">Interactivity</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Interactivity with Javascript</h1>
+            <p>Let's talk about adding interactivity to your websites! </p>
+            <!--see this website (https://www.w3schools.com/tags/tag_figcaption.asp) for more info on how this is setup with the caption!-->
+            <figure>
+                <img src="https://media.licdn.com/dms/image/v2/D4E22AQFG8H63mSJZ1Q/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1706816182819?e=2147483647&v=beta&t=nca5d6b_DhOOFUOAkbe82EjGlQEw0Eq5t6mNxidjDxs">
+                <figcaption>Credit to <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fcaguilar0_html-css-javascript-whats-the-difference-activity-7158905947543773184-c2gG&psig=AOvVaw3Aov7kfh_H8HuunyCMq0V_&ust=1762192311298000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCPC8voeE1JADFQAAAAAdAAAAABBZ">this linkedin article</a> for this image!</figcaption>
+            </figure>
+            <p>So far, we have seen how HTML can add structure to our webpages with organizational tags and how CSS adds styling to our websites. Now, we're going to talk about Javascript, which helps us add extra functionality, such as interactivity, to our websites. </p>
+            <p>Here are some examples of things we can do with Javascript: </p>
+            <ul>
+                <li>Make interactive buttons</li>
+                <li>Send notifications</li>
+                <li>Take input from a user</li>
+                <li>Dynamically change the HTML of a website</li>
+            </ul>
+            <h2>Buttons and Notifications</h2>
+            <p>Inspect to see what's going on! The button is an html element, but we add the notification with javascript. </p>
+            <!--the code in the onclick attribute is javascript! typically we will put javascript in a separate file, but if its something small like this, we can include it directly in the HTML element for simplicity-->
+            <!--the single and double quotes are just so that the onclick attribute doesn't get confused about what is and isn't included-->
+            <button onclick="alert('button clicked')">Click me!</button>
+            <p class="challenge"><b>Challenge #1:</b> use inspect element to modify the onclick command to send a different alert message</p>
+
+            <h2>User Input</h2>
+            <p>User input is more complicated than a button alert, so typically we will attach an external javascript file. This is done by adding a script tag at the bottom of your body (right before the closing tag).</p>
+            <p>But how do you see this javascript file? It's not in the elements or styles menues that you've been working in previously...</p>
+            <p>To find every file for a webpage, including the javascript, you can navigate to the "Sources" tab, click "Page" on the left, and then select interactivity.js</p>
+
+            <!--check out this article (https://www.w3schools.com/html/html_forms.asp) for other cool inputs you can take on your form-->
+            <!--the onsubmit attribute again will let us write some javascript, so I am calling the greetName function I wrote in interactivity.js and returning false so that the page doesn't reload-->
+            <form onsubmit="greetName(); return false; ">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <!--if I want to take multiple inputs, I would add a <br> tag after the above to create a line break, but by default elements inside of a form tag aren't on separate lines-->
+                <input type="submit" value="Submit">
+            </form>
+            <!--you'll notice that this is empty for now, but check it out once you submit the form!-->
+            <p id="greeting"></p>
+
+            <p class="challenge"><b>Challenge #2:</b> write your own function which uses the user's input to display something different on the screen, and redirect the onsubmit to that command instead! </p>
+            <p class="hint">Hint: you can write your own code in the below script tag (inspect to see what I'm talking about)</p>
+        </main>
+        <script>
+            // write your code for challenge 2 here! 
+        </script>
+        <script src="interactivity.js"></script>
+    </body>
+</html>
