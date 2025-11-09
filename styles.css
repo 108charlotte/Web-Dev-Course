@@ -80,3 +80,7 @@ figcaption {
   font-size: 0.8rem; 
   color: grey; 
 }
+
+li {
+  margin: 10px; 
+}
