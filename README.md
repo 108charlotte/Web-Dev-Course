@@ -1,1 +1,4 @@
 # Web-Dev-Course
+This is the course website for 6-week the Schoolhouse.world series "Intro to Web Development through Inspect" in the fall of 2025. The series met in weekly sessions to cover introductory HTML, CSS, and Javascript with a focus on understanding their applications in real-world websites on the internet by using the chrome developer inspect tool (particularly exploring the [plain vanilla web website](https://plainvanillaweb.com/index.html))! It concluded with a final project to create a simple personal portfolio website (tutorial [here](https://108charlotte.github.io/Web-Dev-Course/portfolio.html)) and deploy it on GitHub pages. 
+
+There are two demo final project websites, [this one](https://github.com/108charlotte/Portfolio-Website-Demo-Recorded) from the live final session and [this one](https://github.com/108charlotte/Portfolio-Website-Demo-Live) before while recording the video tutorial. 
